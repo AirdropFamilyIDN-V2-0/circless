@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+from fake_useragent import UserAgent
 
 def banner():
     print("===================================")
@@ -10,10 +11,12 @@ def banner():
 
 url = "https://audience-consumer-api.zootools.co/v3/lists/UZiEmVdANl6A8rLJCDhb/members"
 
+ua = UserAgent()
+
 headers = {
     "Authorization": "Bearer",
     "Content-Type": "application/json",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "User-Agent": ua.random,
     "Origin": "https://form.zootools.co",
     "Accept": "*/*",
     "Accept-Encoding": "gzip, deflate, br, zstd",
