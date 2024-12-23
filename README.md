@@ -15,7 +15,7 @@ git clone https://github.com/AirdropFamilyIDN-V2-0/circless.git
 cd circless
 ```
 ```
-pip install requests
+pip install requests fake-useragent
 ```
 ```
 python bot.py
